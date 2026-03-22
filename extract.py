@@ -1,4 +1,4 @@
-import requests         # library to make HTTP requests to an API.
+import requests       
 from config import API_KEY
 
 CLASSIFICATION_URL = "https://api.harvardartmuseums.org/classification"
@@ -22,7 +22,6 @@ def collect_artifacts(min_objects=2500):
             break
 
         for cls in data["records"]:
-            # ✅ Only include classifications where objectcount >= 2500
             if cls.get("objectcount", 0) >= 2500:
                 records.append(cls["name"])
 
