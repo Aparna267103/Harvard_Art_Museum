@@ -122,7 +122,6 @@ if st.button("Insert Data to MySQL"):
                 # records_list is already a list of dicts
                 all_objects.extend(records_list)
 
-            # 🔥 correct transformation
             df_metadata, df_media, df_colors = transform_objects(all_objects)
 
             insert_metadata(df_metadata)
@@ -148,6 +147,6 @@ selected_query = st.selectbox(
 engine = get_connection()
 
 if st.button("Run Query"):
-    selected_query = queries[selected_query]   # User select pannina query name‑ku corresponding SQL string fetch pannudhu.
+    selected_query = queries[selected_query]   
     df = pd.read_sql(selected_query, engine)
     st.dataframe(df)
