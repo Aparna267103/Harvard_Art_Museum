@@ -133,12 +133,6 @@ Includes queries like:
 
 ---
 
-## 📸 Screenshots
-
-*Add your Streamlit screenshots here*
-
----
-
 ## ❗ Challenges
 
 * Handling API pagination
