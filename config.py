@@ -1,7 +1,3 @@
-CLASSIFICATION_URL = "https://api.harvardartmuseums.org/classification"
-OBJECT_URL = "https://api.harvardartmuseums.org/object"
-
-
 from dotenv import load_dotenv
 import os
 
